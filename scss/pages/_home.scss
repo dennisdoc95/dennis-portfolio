@@ -240,8 +240,7 @@
     gap: v.$space-5;
 }
 
-// Le schede dettagliate della pagina Progetti restano più larghe
-// per favorire la lettura dei contenuti lunghi.
+// Le schede dettagliate della pagina Progetti restano più larghe per favorire la lettura dei contenuti lunghi.
 .projects__grid--page {
     max-width: 64rem;
     margin-inline: auto;

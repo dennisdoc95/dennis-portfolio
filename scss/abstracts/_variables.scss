@@ -1,9 +1,3 @@
-// ================================================================
-// DESIGN TOKENS
-// Valori condivisi da tutte le pagine del portfolio.
-// Modificando queste variabili si aggiornerà l'intero sistema visivo.
-// ================================================================
-
 // Colori principali
 $color-navy-900: #10233f;
 $color-navy-800: #193457;
@@ -39,8 +33,7 @@ $color-error: #b42318;
 $color-success: #067647;
 
 // Famiglie tipografiche
-// Si utilizzano font di sistema: il sito rimane veloce e non dipende
-// da servizi esterni per mostrare correttamente i testi.
+// Si utilizzano font di sistema: il sito rimane veloce e non dipende da servizi esterni per mostrare correttamente i testi.
 $font-family-base: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $font-family-heading: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
