@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as v;
+
+.container {
+    width: min(
+        calc(100% - #{v.$container-gutter * 2}),
+        v.$container-max-width
+    );
+    max-width: none;
+    margin-inline: auto;
+    padding-inline: 0;
+}
+
+.section {
+    padding-block: v.$section-spacing-mobile;
+}
+
+section[id] {
+    scroll-margin-top: v.$space-9;
+}
+
+@media (min-width: v.$breakpoint-lg) {
+    .section {
+        padding-block: v.$section-spacing-desktop;
+    }
+}

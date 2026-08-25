@@ -1,0 +1,94 @@
+@use "../abstracts/variables" as v;
+
+.button {
+    display: inline-flex;
+    width: 100%;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: v.$space-2;
+    padding: 0.625rem v.$space-5;
+    border: 0.125rem solid transparent;
+    border-radius: v.$radius-pill;
+    cursor: pointer;
+    font-weight: v.$font-weight-bold;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition:
+        background-color v.$transition-fast,
+        border-color v.$transition-fast,
+        box-shadow v.$transition-fast,
+        color v.$transition-fast,
+        transform v.$transition-fast;
+}
+
+.button--primary {
+    border-color: v.$color-primary;
+    background-color: v.$color-primary;
+    box-shadow: v.$shadow-sm;
+    color: v.$color-white;
+}
+
+.button--primary:hover {
+    border-color: v.$color-primary-hover;
+    background-color: v.$color-primary-hover;
+    box-shadow: v.$shadow-md;
+    transform: translateY(-0.125rem);
+}
+
+.button--secondary {
+    border-color: v.$color-primary;
+    background-color: v.$color-white;
+    color: v.$color-primary;
+}
+
+.button--secondary:hover {
+    border-color: v.$color-primary-hover;
+    background-color: v.$color-primary-soft;
+    color: v.$color-primary-hover;
+    transform: translateY(-0.125rem);
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.button:disabled,
+.button[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.55;
+    transform: none;
+}
+
+.hero__actions,
+.contact-cta__actions,
+.contact-form__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: v.$space-3;
+}
+
+@media (min-width: v.$breakpoint-sm) {
+    .button {
+        width: auto;
+    }
+
+    .hero__actions,
+    .contact-cta__actions,
+    .contact-form__actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .button--primary:hover,
+    .button--secondary:hover {
+        transform: none;
+    }
+}
+

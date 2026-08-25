@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as v;
+
+body {
+    background-color: v.$color-background;
+    color: v.$color-text;
+    font-family: v.$font-family-base;
+    font-size: v.$font-size-base;
+    font-weight: v.$font-weight-regular;
+    line-height: v.$line-height-base;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: v.$color-heading;
+    font-family: v.$font-family-heading;
+    font-weight: v.$font-weight-bold;
+    line-height: v.$line-height-heading;
+    text-wrap: balance;
+}
+
+h1 {
+    margin-bottom: v.$space-5;
+    font-size: clamp(v.$font-size-2xl, 8vw, v.$font-size-4xl);
+    line-height: v.$line-height-tight;
+}
+
+h2 {
+    margin-bottom: v.$space-4;
+    font-size: clamp(v.$font-size-xl, 5vw, v.$font-size-3xl);
+}
+
+h3 {
+    margin-bottom: v.$space-3;
+    font-size: clamp(v.$font-size-md, 3vw, v.$font-size-xl);
+}
+
+h4 {
+    margin-bottom: v.$space-3;
+    font-size: v.$font-size-md;
+}
+
+p {
+    margin-bottom: v.$space-4;
+}
+
+strong {
+    font-weight: v.$font-weight-bold;
+}
+
+small {
+    font-size: v.$font-size-xs;
+}
+
+a {
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.2em;
+}
+
+::selection {
+    background-color: v.$color-accent-soft;
+    color: v.$color-heading;
+}
+

@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+
+.contact-cta {
+    border-block: 0.0625rem solid v.$color-border;
+    background-color: v.$color-primary-soft;
+}
+
+.contact-cta__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: v.$space-5;
+}
+
+.contact-cta .section-heading {
+    margin-bottom: v.$space-4;
+}
+
+.contact-cta__content {
+    max-width: 48rem;
+}
+
+.contact-cta__content > p:last-child {
+    margin-bottom: 0;
+}
+

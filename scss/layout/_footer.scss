@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as v;
+
+.site-footer {
+    padding-block: v.$space-6;
+    background-color: v.$color-navy-900;
+    color: v.$color-white;
+}
+
+.site-footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: v.$space-4;
+}
+
+.site-footer__copyright {
+    margin-bottom: 0;
+    color: v.$color-gray-100;
+    font-size: v.$font-size-sm;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$space-2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links__link,
+.site-footer__back-to-top {
+    display: inline-flex;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: v.$space-2 v.$space-3;
+    border-radius: v.$radius-pill;
+    color: v.$color-blue-100;
+    font-weight: v.$font-weight-semibold;
+    text-decoration: none;
+    transition:
+        background-color v.$transition-fast,
+        color v.$transition-fast;
+}
+
+.social-links__link:hover,
+.site-footer__back-to-top:hover {
+    background-color: rgb(255 255 255 / 12%);
+    color: v.$color-white;
+}

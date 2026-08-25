@@ -1,0 +1,100 @@
+@use "../abstracts/variables" as v;
+
+.contact-form {
+    padding: v.$space-5;
+    border: 0.0625rem solid v.$color-border;
+    border-radius: v.$radius-lg;
+    background-color: v.$color-white;
+    box-shadow: v.$shadow-sm;
+}
+
+.form-field + .form-field {
+    margin-top: v.$space-5;
+}
+
+.form-field label {
+    display: inline-block;
+    margin-bottom: v.$space-2;
+    color: v.$color-heading;
+    font-weight: v.$font-weight-semibold;
+}
+
+.form-field label span:not([aria-hidden="true"]),
+#required-fields-note {
+    color: v.$color-text-muted;
+    font-size: v.$font-size-sm;
+    font-weight: v.$font-weight-regular;
+}
+
+.form-field input:not([type="checkbox"]),
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.75rem v.$space-4;
+    border: 0.0625rem solid v.$color-gray-500;
+    border-radius: v.$radius-md;
+    background-color: v.$color-white;
+    color: v.$color-text;
+    transition:
+        border-color v.$transition-fast,
+        box-shadow v.$transition-fast;
+}
+
+.form-field textarea {
+    min-height: 10rem;
+}
+
+.form-field input:not([type="checkbox"]):hover,
+.form-field select:hover,
+.form-field textarea:hover {
+    border-color: v.$color-primary;
+}
+
+.form-field input:not([type="checkbox"]):focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible {
+    border-color: v.$color-primary;
+    outline: 0.1875rem solid v.$color-white;
+    outline-offset: 0.125rem;
+    box-shadow: 0 0 0 0.375rem v.$color-focus;
+}
+
+.form-field input:user-invalid,
+.form-field select:user-invalid,
+.form-field textarea:user-invalid {
+    border-color: v.$color-error;
+}
+
+.form-field--checkbox {
+    display: grid;
+    min-height: 2.75rem;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: v.$space-3;
+}
+
+.form-field--checkbox input {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    accent-color: v.$color-primary;
+}
+
+.form-field--checkbox label {
+    display: flex;
+    min-height: 2.75rem;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: v.$font-weight-regular;
+}
+
+.contact-form__actions {
+    margin-top: v.$space-6;
+}
+
+@media (min-width: v.$breakpoint-md) {
+    .contact-form {
+        padding: v.$space-6;
+    }
+}

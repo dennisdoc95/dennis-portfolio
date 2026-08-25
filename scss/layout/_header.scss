@@ -1,0 +1,121 @@
+@use "../abstracts/variables" as v;
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: v.$z-index-header;
+    border-bottom: 0.0625rem solid v.$color-border;
+    background-color: rgb(255 255 255 / 96%);
+    box-shadow: v.$shadow-sm;
+    backdrop-filter: blur(0.75rem);
+}
+
+.site-header__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: v.$space-2;
+    padding-block: v.$space-3;
+}
+
+.site-logo {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: v.$space-2;
+    color: v.$color-heading;
+    font-size: v.$font-size-lg;
+    font-weight: v.$font-weight-bold;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
+
+.site-logo__image {
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.site-nav {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.site-nav__list {
+    display: flex;
+    min-width: max-content;
+    align-items: center;
+    gap: v.$space-1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav__list a {
+    display: inline-flex;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: v.$space-2;
+    border-radius: v.$radius-pill;
+    color: v.$color-gray-700;
+    font-size: v.$font-size-sm;
+    font-weight: v.$font-weight-semibold;
+    text-decoration: none;
+    transition:
+        background-color v.$transition-fast,
+        color v.$transition-fast,
+        box-shadow v.$transition-fast;
+}
+
+.site-nav__list a:hover {
+    background-color: v.$color-primary-soft;
+    box-shadow: inset 0 0 0 0.0625rem rgb(47 95 208 / 24%);
+    color: v.$color-primary-hover;
+}
+
+.site-nav__list a[aria-current="page"] {
+    background-color: v.$color-accent-soft;
+    color: v.$color-accent;
+}
+
+.site-nav__list a[aria-current="page"]:hover {
+    background-color: v.$color-primary-soft;
+    color: v.$color-primary-hover;
+}
+
+@media (min-width: v.$breakpoint-lg) {
+    .site-header {
+        position: static;
+        box-shadow: none;
+    }
+
+    .site-header__inner {
+        min-height: 4.75rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: v.$space-6;
+        padding-block: v.$space-2;
+    }
+
+    .site-nav {
+        width: auto;
+        overflow: visible;
+    }
+
+    .site-nav__list {
+        gap: v.$space-2;
+    }
+
+    .site-nav__list a {
+        padding-inline: v.$space-4;
+    }
+}

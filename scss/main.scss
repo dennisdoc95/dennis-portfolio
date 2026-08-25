@@ -1,0 +1,19 @@
+// Punto di ingresso del foglio di stile.
+// Ogni partial gestisce una responsabilità specifica.
+
+@use "base/reset";
+@use "base/typography";
+@use "base/accessibility";
+@use "layout/container";
+@use "layout/header";
+@use "layout/footer";
+@use "components/links";
+@use "components/buttons";
+@use "components/headings";
+@use "components/cards";
+@use "components/forms";
+@use "components/cta";
+@use "pages/home";
+@use "pages/cv";
+@use "pages/contact";
+@use "layout/responsive";

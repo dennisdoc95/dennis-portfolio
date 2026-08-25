@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as v;
+
+.contact__grid {
+    display: grid;
+    align-items: start;
+    gap: v.$space-7;
+}
+
+.contact__intro {
+    max-width: 36rem;
+}
+
+.contact__intro p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 48rem;
+}
+
+@media (min-width: v.$breakpoint-lg) {
+    .contact__grid {
+        grid-template-columns: minmax(16rem, 0.75fr) minmax(0, 1.25fr);
+        gap: v.$space-8;
+    }
+
+    .contact-form {
+        max-width: none;
+    }
+}
+
+@media (min-width: v.$breakpoint-xl) {
+    .contact__grid {
+        gap: v.$space-9;
+    }
+}
+

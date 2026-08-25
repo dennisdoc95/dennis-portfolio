@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as v;
+
+@media (min-width: v.$breakpoint-md) {
+    .contact-cta__inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: v.$space-7;
+    }
+
+    .contact-cta__actions {
+        flex-shrink: 0;
+    }
+
+    .site-footer__inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: v.$space-4 v.$space-6;
+    }
+}
+
+@media (min-width: v.$breakpoint-lg) {
+    .site-footer__inner {
+        flex-wrap: nowrap;
+    }
+
+    .site-footer__social {
+        margin-inline: auto;
+    }
+}
+

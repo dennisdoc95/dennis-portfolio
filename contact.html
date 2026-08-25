@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dennis Prada">
+    <meta
+        name="description"
+        content="Contatta Dennis Prada per opportunità professionali, collaborazioni e progetti dedicati a dati, tecnologia e innovazione."
+    >
+
+<!-- Metadati Open Graph per la condivisione sui social -->
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dennis Prada">
+    <meta property="og:title" content="Contatti | Dennis Prada">
+    <meta
+        property="og:description"
+        content="Contatta Dennis Prada per opportunità professionali, collaborazioni e progetti dedicati a dati, tecnologia e innovazione."
+    >
+
+<!-- Metadati per la condivisione su X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contatti | Dennis Prada">
+    <meta
+        name="twitter:description"
+        content="Contatta Dennis Prada per opportunità professionali, collaborazioni e progetti dedicati a dati, tecnologia e innovazione."
+    >
+    
+    <title>Contatti | Dennis Prada</title>
+
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!-- Collegamento al file CSS, da creare ancora -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+
+    <!-- Intestazione del sito -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-logo" href="index.html">
+                <img
+                    class="site-logo__image"
+                    src="assets/images/branding/logo-dennis-prada.png"
+                    alt=""
+                    width="44"
+                    height="44"
+                >
+                <span>Dennis Prada</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Navigazione principale">
+                <ul class="site-nav__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Progetti</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html" aria-current="page">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="page-hero" aria-labelledby="contact-page-title">
+            <div class="container page-hero__content">
+                <h1 id="contact-page-title">Contattami</h1>
+
+                <p class="page-hero__description">
+                    Possiamo confrontarci su opportunità professionali, collaborazioni, dati, tecnologia e innovazione.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact section" aria-labelledby="contact-form-title">
+            <div class="container contact__grid">
+                <div class="contact__intro">
+                    <header class="section-heading">
+                        <h2 id="contact-form-title">Scrivimi un messaggio</h2>
+                    </header>
+
+                    <p>
+                        Compila il form descrivendo brevemente il motivo del contatto. Ti risponderò appena possibile.
+                    </p>
+
+                    <p id="required-fields-note">
+                        I campi contrassegnati con un asterisco (*) sono obbligatori.
+                    </p>
+                </div>
+
+                <!-- TODO: collegare il form a un servizio di invio prima della pubblicazione. -->
+                <form
+                    class="contact-form"
+                    method="post"
+                    aria-describedby="required-fields-note"
+                >
+                    <div class="form-field">
+                        <label for="name">
+                            Nome e cognome <span aria-hidden="true">*</span>
+                        </label>
+                        <input
+                            id="name"
+                            name="nome"
+                            type="text"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">
+                            Email <span aria-hidden="true">*</span>
+                        </label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="company">Azienda <span>(facoltativa)</span></label>
+                        <input
+                            id="company"
+                            name="azienda"
+                            type="text"
+                            autocomplete="organization"
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="reason">
+                            Motivo del contatto <span aria-hidden="true">*</span>
+                        </label>
+                        <select id="reason" name="motivo" required>
+                            <option value="" selected disabled>Seleziona un’opzione</option>
+                            <option value="opportunita-professionale">Opportunità professionale</option>
+                            <option value="collaborazione">Collaborazione</option>
+                            <option value="progetto">Proposta di progetto</option>
+                            <option value="confronto">Confronto professionale</option>
+                            <option value="altro">Altro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">
+                            Messaggio <span aria-hidden="true">*</span>
+                        </label>
+                        <textarea
+                            id="message"
+                            name="messaggio"
+                            rows="8"
+                            minlength="20"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-field form-field--checkbox">
+                        <input
+                            id="consent"
+                            name="consenso"
+                            type="checkbox"
+                            value="accetto"
+                            required
+                        >
+                        <label for="consent">
+                            Acconsento all’utilizzo dei dati inseriti esclusivamente per ricevere una risposta alla mia richiesta.
+                            <span aria-hidden="true">*</span>
+                        </label>
+                    </div>
+
+                    <div class="contact-form__actions">
+                        <button class="button button--primary" type="submit">
+                            Invia il messaggio
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Piè di pagina -->
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__copyright">
+                &copy; <time datetime="2026">2026</time> Dennis. Tutti i diritti riservati.
+            </p>
+
+            <nav class="site-footer__social" aria-label="Profili social">
+                <ul class="social-links">
+                    <li>
+                        <a
+                            class="social-links__link"
+                            href="https://www.linkedin.com/in/dennis-prada/"
+                            target="_blank"
+                            rel="me noopener noreferrer"
+                            aria-label="Visita il profilo LinkedIn di Dennis in una nuova scheda"
+                        >LinkedIn</a>
+                    </li>
+                    <li>
+                        <a
+                            class="social-links__link"
+                            href="https://x.com/DennisDocPrada"
+                            target="_blank"
+                            rel="me noopener noreferrer"
+                            aria-label="Visita il profilo X di Dennis in una nuova scheda"
+                        >X</a>
+                    </li>
+                    <li>
+                        <a
+                            class="social-links__link"
+                            href="https://substack.com/@dennisdocprada"
+                            target="_blank"
+                            rel="me noopener noreferrer"
+                            aria-label="Visita il profilo Substack di Dennis in una nuova scheda"
+                        >Substack</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="site-footer__back-to-top" href="#main-content">Torna all’inizio</a>
+        </div>
+    </footer>
+</body>
+</html>

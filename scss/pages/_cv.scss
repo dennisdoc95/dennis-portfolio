@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as v;
+
+.cv-profile__inner {
+    display: grid;
+    gap: v.$space-5;
+}
+
+.cv-profile__content {
+    max-width: 70ch;
+}
+
+.cv-profile__content p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: v.$breakpoint-md) {
+    .cv-education__list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: v.$space-6;
+    }
+}
+
+@media (min-width: v.$breakpoint-lg) {
+    .cv-profile__inner {
+        grid-template-columns: minmax(14rem, 0.65fr) minmax(0, 1.35fr);
+        align-items: start;
+        gap: v.$space-8;
+    }
+
+    .cv-profile .section-heading {
+        margin-bottom: 0;
+    }
+
+    .cv-education__list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

@@ -1,0 +1,114 @@
+// ================================================================
+// DESIGN TOKENS
+// Valori condivisi da tutte le pagine del portfolio.
+// Modificando queste variabili si aggiornerà l'intero sistema visivo.
+// ================================================================
+
+// Colori principali
+$color-navy-900: #10233f;
+$color-navy-800: #193457;
+$color-blue-100: #e8efff;
+$color-blue-600: #2f5fd0;
+$color-blue-700: #2349a3;
+
+// Colori neutri
+$color-white: #ffffff;
+$color-gray-50: #f7f9fc;
+$color-gray-100: #eef2f6;
+$color-gray-300: #d0d5dd;
+$color-gray-500: #667085;
+$color-gray-700: #344054;
+$color-gray-900: #172033;
+$color-warm-50: #f8f6f1;
+
+// Colori semantici
+$color-background: $color-white;
+$color-surface: $color-gray-50;
+$color-surface-warm: $color-warm-50;
+$color-text: $color-gray-900;
+$color-text-muted: $color-gray-500;
+$color-heading: $color-navy-900;
+$color-primary: $color-blue-600;
+$color-primary-hover: $color-blue-700;
+$color-primary-soft: $color-blue-100;
+$color-accent: $color-primary-hover;
+$color-accent-soft: $color-primary-soft;
+$color-border: $color-gray-300;
+$color-focus: $color-primary;
+$color-error: #b42318;
+$color-success: #067647;
+
+// Famiglie tipografiche
+// Si utilizzano font di sistema: il sito rimane veloce e non dipende
+// da servizi esterni per mostrare correttamente i testi.
+$font-family-base: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font-family-heading: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+// Dimensioni del testo
+$font-size-xs: 0.875rem;
+$font-size-sm: 0.9375rem;
+$font-size-base: 1rem;
+$font-size-md: 1.125rem;
+$font-size-lg: 1.25rem;
+$font-size-xl: 1.5rem;
+$font-size-2xl: 2rem;
+$font-size-3xl: 2.75rem;
+$font-size-4xl: 3.5rem;
+
+// Pesi e interlinea
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$line-height-tight: 1.15;
+$line-height-heading: 1.25;
+$line-height-base: 1.65;
+
+// Scala delle spaziature
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.5rem;
+$space-6: 2rem;
+$space-7: 3rem;
+$space-8: 4rem;
+$space-9: 6rem;
+
+// Dimensioni del layout
+$container-max-width: 75rem;
+$container-gutter: 1.25rem;
+$section-spacing-mobile: $space-8;
+$section-spacing-desktop: $space-9;
+
+// Raggi dei bordi
+$radius-sm: 0.5rem;
+$radius-md: 0.75rem;
+$radius-lg: 1.25rem;
+$radius-pill: 9999px;
+
+// Ombre
+$shadow-sm: 0 0.125rem 0.5rem rgb(16 35 63 / 8%);
+$shadow-md: 0 0.5rem 1.75rem rgb(16 35 63 / 10%);
+$shadow-focus: 0 0 0 0.25rem rgb(244 180 0 / 30%);
+
+// Transizioni
+$transition-fast: 150ms ease;
+$transition-base: 250ms ease;
+
+// Breakpoint mobile-first
+$breakpoint-sm: 36rem;  // 576 px
+$breakpoint-md: 48rem;  // 768 px
+$breakpoint-lg: 64rem;  // 1024 px
+$breakpoint-xl: 80rem;  // 1280 px
+
+$breakpoints: (
+    "sm": $breakpoint-sm,
+    "md": $breakpoint-md,
+    "lg": $breakpoint-lg,
+    "xl": $breakpoint-xl
+);
+
+// Livelli di sovrapposizione
+$z-index-header: 100;
+$z-index-skip-link: 200;

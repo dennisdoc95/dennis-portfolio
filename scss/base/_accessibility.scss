@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as v;
+
+:focus-visible {
+    outline: 0.1875rem solid v.$color-white;
+    outline-offset: 0.125rem;
+    box-shadow: 0 0 0 0.375rem v.$color-focus;
+}
+
+.skip-link {
+    position: fixed;
+    top: v.$space-3;
+    left: v.$space-3;
+    z-index: v.$z-index-skip-link;
+    padding: v.$space-3 v.$space-4;
+    border-radius: v.$radius-sm;
+    background-color: v.$color-heading;
+    box-shadow: v.$shadow-md;
+    color: v.$color-white;
+    font-weight: v.$font-weight-semibold;
+    transform: translateY(calc(-100% - 2rem));
+    transition: transform v.$transition-fast;
+}
+
+.skip-link:focus-visible {
+    transform: translateY(0);
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (forced-colors: active) {
+    :focus-visible {
+        outline-color: Highlight;
+        box-shadow: none;
+    }
+
+    .skip-link {
+        border: 0.125rem solid CanvasText;
+    }
+}

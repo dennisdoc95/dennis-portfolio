@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as v;
+
+// Calcolo delle dimensioni coerente per tutti gli elementi.
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-top: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+[hidden] {
+    display: none !important;
+}
+

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dennis Prada">
+    <meta
+        name="description"
+        content="I progetti di Dennis Prada dedicati ad analisi dati, controllo di gestione, tecnologia e sviluppo web."
+    >
+<!-- Metadati Open Graph per la condivisione sui social -->
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dennis Prada">
+    <meta property="og:title" content="Progetti | Dennis Prada">
+    <meta
+        property="og:description"
+        content="Scopri i progetti di Dennis Prada dedicati ad analisi dati, tecnologia, sostenibilità e sviluppo web."
+    >
+
+<!-- Metadati per la condivisione su X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Progetti | Dennis Prada">
+    <meta
+        name="twitter:description"
+        content="Scopri i progetti di Dennis Prada dedicati ad analisi dati, tecnologia, sostenibilità e sviluppo web."
+    >
+    <title>Progetti | Dennis Prada</title>
+
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!-- Collegamento al file CSS, da creare ancora -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
+
+    <!-- Intestazione del sito -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-logo" href="index.html">
+                <img
+                    class="site-logo__image"
+                    src="assets/images/branding/logo-dennis-prada.png"
+                    alt=""
+                    width="44"
+                    height="44"
+                >
+                <span>Dennis Prada</span>
+            
+            </a>
+
+            <nav class="site-nav" aria-label="Navigazione principale">
+                <ul class="site-nav__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" aria-current="page">Progetti</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="page-hero" aria-labelledby="projects-page-title">
+            <div class="container page-hero__content">
+                <h1 id="projects-page-title">I miei progetti</h1>
+
+                <p class="page-hero__description">
+                    Tre progetti che raccontano il mio percorso tra progettazione dei processi,
+                    analisi dei dati e data visualization.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects section" aria-label="Elenco dei progetti">
+            <div class="container">
+                <div class="projects__grid projects__grid--page">
+                    <article
+                        class="project-card"
+                        id="menu-sostenibile"
+                        aria-labelledby="menu-sostenibile-title"
+                    >
+                                <figure class="project-card__media">
+                                <img
+                                    class="project-card__image"
+                                    src="assets/images/projects/menu-sostenibile-tableau.webp"
+                                    alt="Grafico Tableau che confronta l’impronta carbonica degli alimenti con la quota dovuta al trasporto"
+                                    width="1249"
+                                    height="999"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                </figure>
+                        <div class="project-card__content">
+                            <h2 id="menu-sostenibile-title">
+                                Menù sostenibile: analisi dell’impronta carbonica degli alimenti
+                            </h2>
+
+                            <p>
+                                Progetto di data visualization dedicato all’impronta carbonica
+                                di 43 alimenti, sviluppato per supportare un ristorante nella
+                                progettazione di un menù più sostenibile.
+                            </p>
+
+                            <h3>Obiettivo</h3>
+
+                            <p>
+                                Individuare gli alimenti e le fasi del ciclo di vita con il
+                                maggiore impatto ambientale, trasformando i dati in indicazioni
+                                utili per costruire e comunicare un’offerta a minori emissioni.
+                            </p>
+
+                            <h3>Attività svolte</h3>
+
+                            <ul class="project-card__list">
+                                <li>
+                                    Analisi delle emissioni espresse in chilogrammi di CO₂e
+                                    per chilogrammo di prodotto.
+                                </li>
+                                <li>
+                                    Confronto tra categorie alimentari e fasi del ciclo di vita,
+                                    dalla produzione agricola alla vendita.
+                                </li>
+                                <li>
+                                    Creazione di dashboard e visualizzazioni interattive in Tableau.
+                                </li>
+                                <li>
+                                    Elaborazione di una proposta strategica per un menù a basso
+                                    impatto ambientale.
+                                </li>
+                            </ul>
+
+                            <h3>Risultati principali</h3>
+
+                            <p>
+                                La carne bovina risulta l’alimento con l’impronta più elevata,
+                                pari a 59,6 kg di CO₂e per kg di prodotto. La produzione agricola
+                                genera il 58,1% delle emissioni analizzate, mentre il trasporto
+                                incide per il 3,27%: scegliere alimenti locali, da solo, non basta
+                                quindi a rendere sostenibile un menù.
+                            </p>
+
+                            <p class="project-card__technologies">
+                                <strong>Strumenti e competenze:</strong>
+                                Tableau, data visualization e data analysis.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="project-card"
+                        id="includo"
+                        aria-labelledby="includo-title"
+                    >
+                                <figure class="project-card__media project-card__media--diagram">
+                                    <img
+                                        class="project-card__image"
+                                        src="assets/images/projects/includo-diagramma-flusso.webp"
+                                        alt="Diagramma di flusso del processo di candidatura IncluDO, dall’inserimento dei dati all’assegnazione a un’azienda partner"
+                                        width="743"
+                                        height="1111"
+                                        loading="lazy"
+                                        decoding="async"
+                                    >
+                                </figure>
+                        <div class="project-card__content">
+                            <h2 id="includo-title">
+                                IncluDO: preservare e trasmettere le competenze storiche del nostro Paese
+                            </h2>
+
+                            <p>
+                                Progettazione della logica di un percorso formativo rivolto
+                                a persone migranti o impegnate in programmi di riabilitazione
+                                sociale, con l’obiettivo di favorirne l’inserimento nei mestieri
+                                tradizionali.
+                            </p>
+
+                            <h3>Obiettivo</h3>
+
+                            <p>
+                                Definire un processo trasparente che verifichi i requisiti di
+                                accesso, l’esito del corso e la disponibilità delle aziende partner,
+                                accompagnando ogni candidatura verso un risultato comprensibile.
+                            </p>
+
+                            <h3>Attività svolte</h3>
+
+                            <ul class="project-card__list">
+                                <li>Progettazione del diagramma di flusso dell’intero processo.</li>
+                                <li>Costruzione della tabella di verità per le condizioni decisionali.</li>
+                                <li>Scrittura dello pseudocodice della procedura.</li>
+                                <li>
+                                    Verifica della logica attraverso quattro casi di test,
+                                    comprendenti sia esiti positivi sia motivazioni di esclusione.
+                                </li>
+                            </ul>
+
+                            <h3>Risultato</h3>
+
+                            <p>
+                                Il progetto restituisce una logica decisionale riutilizzabile,
+                                capace di distinguere i diversi esiti e di comunicare con precisione
+                                perché una candidatura viene accettata o non può proseguire.
+                            </p>
+
+                            <p class="project-card__technologies">
+                                <strong>Strumenti e competenze:</strong>
+                                logica algoritmica, diagramma di flusso, tabella di verità,
+                                pseudocodice e casi di test.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article
+                        class="project-card"
+                        id="spesa-educativa-world-bank"
+                        aria-labelledby="spesa-educativa-world-bank-title"
+                    >
+                                <figure class="project-card__media project-card__media--wide">
+                                <img
+                                    class="project-card__image"
+                                    src="assets/images/projects/analisi-world-bank-python.webp"
+                                    alt="Grafico a dispersione sulla relazione tra iscrizione alla scuola secondaria e PIL pro capite, suddiviso per livello di reddito"
+                                    width="1472"
+                                    height="862"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                                </figure>
+
+                        <div class="project-card__content">
+                            <h2 id="spesa-educativa-world-bank-title">
+                                Analisi della spesa educativa e degli indicatori socioeconomici della World Bank
+                            </h2>
+
+                            <p>
+                                Progetto di data manipulation e visualization sviluppato in Python
+                                su dati Paese-anno della World Bank relativi al periodo 1998–2023.
+                            </p>
+
+                            <h3>Obiettivo</h3>
+
+                            <p>
+                                Comprendere se, e in quale misura, l’investimento pubblico
+                                nell’istruzione sia associato ai risultati educativi e alle
+                                condizioni economiche e sociali dei Paesi.
+                            </p>
+
+                            <h3>Attività svolte</h3>
+
+                            <ul class="project-card__list">
+                                <li>
+                                    Acquisizione dei dati tramite API World Bank e creazione
+                                    di funzioni Python riutilizzabili.
+                                </li>
+                                <li>
+                                    Pulizia, controllo e unione degli indicatori in un panel
+                                    Paese-anno, con esclusione degli aggregati geografici.
+                                </li>
+                                <li>
+                                    Analisi della copertura e dei valori mancanti per anno,
+                                    variabile e regione.
+                                </li>
+                                <li>
+                                    Realizzazione di correlazioni, analisi con ritardi temporali,
+                                    mappe, heatmap, scatter plot, hexbin plot e trend regionali.
+                                </li>
+                            </ul>
+
+                            <h3>Risultati principali</h3>
+
+                            <p>
+                                La spesa educativa mostra associazioni positive ma non forti con
+                                i risultati scolastici e non consente di stabilire un rapporto
+                                causale. Le relazioni più marcate riguardano l’iscrizione alla scuola
+                                secondaria, correlata positivamente sia con il PIL pro capite
+                                (ρ = 0,77) sia con l’aspettativa di vita (ρ = 0,76).
+                            </p>
+
+                            <p class="project-card__technologies">
+                                <strong>Strumenti e competenze:</strong>
+                                Python, Pandas, NumPy, Requests, API World Bank, Matplotlib,
+                                Seaborn e Plotly.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Piè di pagina -->
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__copyright">
+                &copy; <time datetime="2026">2026</time> Dennis. Tutti i diritti riservati.
+            </p>
+
+            <nav class="site-footer__social" aria-label="Profili social">
+                <ul class="social-links">
+                    <li>
+                        <a
+                            class="social-links__link"
+                            href="https://www.linkedin.com/in/dennis-prada/"
+                            target="_blank"
+                            rel="me noopener noreferrer"
+                            aria-label="Visita il profilo LinkedIn di Dennis in una nuova scheda"
+                        >LinkedIn</a>
+                    </li>
+                    <li>
+                        <a
+                            class="social-links__link"
+                            href="https://x.com/DennisDocPrada"
+                            target="_blank"
+                            rel="me noopener noreferrer"
+                            aria-label="Visita il profilo X di Dennis in una nuova scheda"
+                        >X</a>
+                    </li>
+                    <li>
+                        <a
+                            class="social-links__link"
+                            href="https://substack.com/@dennisdocprada"
+                            target="_blank"
+                            rel="me noopener noreferrer"
+                            aria-label="Visita il profilo Substack di Dennis in una nuova scheda"
+                        >Substack</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="site-footer__back-to-top" href="#main-content">Torna all’inizio</a>
+        </div>
+    </footer>
+</body>
+</html>
