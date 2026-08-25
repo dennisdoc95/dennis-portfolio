@@ -48,6 +48,10 @@
     background-color: v.$color-surface;
 }
 
+.page-hero--illustrated {
+    padding-block: v.$space-7;
+}
+
 .page-hero h1 {
     margin-bottom: v.$space-4;
 }
@@ -57,6 +61,28 @@
     margin-bottom: 0;
     color: v.$color-text-muted;
     font-size: v.$font-size-md;
+}
+
+// Testata delle pagine interne con testo e illustrazione.
+.page-hero__layout {
+    display: grid;
+    align-items: center;
+    gap: v.$space-6;
+}
+
+.page-hero__content {
+    min-width: 0;
+}
+
+.page-hero__media {
+    width: min(100%, 28rem);
+    margin-inline: auto;
+}
+
+.page-hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: v.$breakpoint-md) {
@@ -71,6 +97,20 @@
 @media (min-width: v.$breakpoint-lg) {
     .page-hero {
         padding-block: v.$space-9;
+    }
+
+    .page-hero--illustrated {
+        padding-block: v.$space-8;
+    }
+    
+    .page-hero__layout {
+        grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+        gap: v.$space-8;
+    }
+
+    .page-hero__media {
+        justify-self: end;
+        margin-inline: 0;
     }
 }
 
