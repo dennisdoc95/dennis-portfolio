@@ -1484,3 +1484,22 @@ section[id] {
         margin-inline: auto;
     }
 }
+
+/* Messaggi restituiti dopo l'invio del form */
+.contact-form__status {
+    min-height: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.contact-form__status:empty {
+    display: none;
+}
+
+.contact-form__status--success {
+    color: #2349a3;
+}
+
+.contact-form__status--error {
+    color: #b42318;
+}

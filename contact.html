@@ -104,13 +104,15 @@
                     </p>
                 </div>
 
-                <!-- TODO: collegare il form a un servizio di invio prima della pubblicazione. -->
-                <form
-                    class="contact-form"
-                    method="post"
-                    aria-describedby="required-fields-note"
-                >
-                    <div class="form-field">
+<!-- Form di contatto collegato a EmailJS -->
+    <form
+        id="contact-form"
+        class="contact-form"
+        method="post"
+        aria-describedby="required-fields-note"
+        >
+                    
+        <div class="form-field">
                         <label for="name">
                             Nome e cognome <span aria-hidden="true">*</span>
                         </label>
@@ -192,6 +194,10 @@
                             Invia il messaggio
                         </button>
                     </div>
+                    
+                    <p id="form-status" class="contact-form__status"role="status"aria-live="polite"></p>
+
+
                 </form>
             </div>
         </section>
@@ -239,5 +245,12 @@
             <a class="site-footer__back-to-top" href="#main-content">Torna all’inizio</a>
         </div>
     </footer>
+
+<!-- Libreria EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Gestione del form di contatto -->
+<script src="js/contact-form.js"></script>
+
 </body>
 </html>
