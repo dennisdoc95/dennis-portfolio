@@ -1,5 +1,10 @@
 @use "../abstracts/variables" as v;
 
+// Collegamento per scaricare il curriculum in PDF.
+.cv-download {
+    margin-top: v.$space-6;
+}
+
 .cv-profile__inner {
     display: grid;
     gap: v.$space-5;

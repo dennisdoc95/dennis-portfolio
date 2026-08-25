@@ -63,6 +63,9 @@
 }
 
 // Presentazione personale.
+.about {
+    padding-block: v.$space-7;
+}
 .about__grid {
     display: grid;
     gap: v.$space-5;
@@ -93,6 +96,7 @@
 
 // Timeline del percorso: verticale su mobile.
 .career {
+    padding-top: v.$space-7;
     background-color: v.$color-surface;
 }
 
@@ -229,6 +233,20 @@
 
 .career-chart__item--four {
     --level: 24%;
+}
+
+// Spazi verticali delle sezioni successive della Home.
+#competenze {
+    padding-bottom: v.$space-7;
+}
+
+#progetti {
+    padding-block: v.$space-7;
+    background-color: v.$color-surface;
+}
+
+#formazione {
+    padding-top: v.$space-7;
 }
 
 // Griglie delle sezioni: una colonna su mobile.
@@ -412,6 +430,26 @@
     .hero__media {
         max-width: 22rem;
         justify-self: end;
+    }
+    
+    .about {
+    padding-block: v.$space-8;
+    }
+
+    .career {
+        padding-top: v.$space-8;
+    }
+    
+    #competenze {
+        padding-bottom: v.$space-8;
+    }
+
+    #progetti {
+        padding-block: v.$space-8;
+    }
+
+    #formazione {
+        padding-top: v.$space-8;
     }
 
     .about__grid {
