@@ -82,11 +82,16 @@
 }
 
 .form-field--checkbox label {
-    display: flex;
-    min-height: 2.75rem;
-    align-items: center;
+    display: block;
+    min-height: auto;
     margin-bottom: 0;
+    line-height: 1.5;
     font-weight: v.$font-weight-regular;
+}
+
+.form-field--checkbox .required-marker {
+    display: inline-block;
+    margin-left: 0.125rem;
 }
 
 .contact-form__actions {
